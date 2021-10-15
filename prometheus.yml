@@ -20,7 +20,7 @@ scrape_configs:
   - job_name: 'example'
 
     dns_sd_configs:
-      - names: ['flask-prometheus']
+      - names: ['10.104.202.72']
         port: 5000
         type: A
         refresh_interval: 5s
