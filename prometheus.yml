@@ -18,5 +18,9 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
   - job_name: 'example'
-    static_configs:
-      - targets: ['10.104.202.72:5000']
+    dns_sd_configs:
+      - names: ['flask-prometheus-discovery']
+        port: 5000
+        type: A
+        refresh_interval: 5s
+      
