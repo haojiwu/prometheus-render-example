@@ -5,4 +5,6 @@ services:
   autoDeploy: false
   envVars:
   - key: SCRAPE_SERVICE_NAME
+    sync: false
   - key: SCRAPE_SERVICE_PORT
+    sync: false
